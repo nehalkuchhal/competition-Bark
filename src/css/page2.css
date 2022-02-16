@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* 
+=========
+SECTION-1
+=========
+*/
+
+.section-1 {
+  background: #f6f6f6;
+}
+
+/* 
+=====
+BOXES
+=====
+*/
+
+.boxes {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  place-content: center;
+  position: relative;
+  top: 10px;
+  padding: 100px;
+  row-gap: 56px;
+  column-gap: 26px;
+  animation: boxes linear 0.7s 1 alternate;
+}
+
+@keyframes boxes {
+  0%{
+    top: 600px;
+  }
+  100%{
+    top: 10px;
+  }
+  
+}
+
+.box {
+  width: 250px;
+  height: 200px;
+  background: #c1def5;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.box img {
+  margin-top: 35px;
+  width: 70px;
+  height: 70px;
+}
+
+.box p {
+  width: 186px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.box ion-icon {
+  margin-top: 35px;
+  width: 127px;
+  height: 123px;
+}
+
+.box h2 {
+  margin-top: 51px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.box-3 img {
+  width: 90px;
+}
+
+.box-3 p {
+  width: 160px;
+  margin-left: 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.box-4 img {
+  width: 90px;
+}
+
+.box-6 img {
+  width: 150px;
+  height: 131px;
+}
+
+/* 
+=========
+SECTION-2
+=========
+*/
+
+.section-2 {
+  background-image: url("/src/img/page2/section2-page2.png");
+  height: 541px;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.section-2 h2 {
+  color: white;
+  font-size: 64px;
+  margin-left: 822px;
+  width: 601px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* 
+==========
+RESPONSIVE
+==========
+*/
+
+@media screen and (max-width: 600px) {
+  /* 
+=========
+SECTION-1
+=========
+*/
+
+  /* 
+=====
+BOXES
+=====
+*/
+
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    row-gap: 26px;
+    column-gap: 26px;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .box img {
+    margin-top: 15px;
+    width: 67px;
+    height: 63px;
+  }
+
+  .box p {
+    margin-top: 1px;
+    width: 116px;
+    font-size: 12px;
+  }
+
+  .box ion-icon {
+    margin-top: 15px;
+    width: 67px;
+    height: 63px;
+  }
+
+  .box h2 {
+    margin-top: 31px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .box-3 img {
+    width: 86px;
+  }
+
+  .box-3 p {
+    width: 150px;
+    line-height: 15px;
+  }
+
+  .box-4 img {
+    width: 90px;
+  }
+
+  .box-6 img {
+    width: 60px;
+    height: 61px;
+  }
+
+  .box-7 p {
+    width: 142px;
+  }
+
+  /* 
+=========
+SECTION-2
+=========
+*/
+
+  .section-2 {
+    height: 141px;
+    background-size: cover;
+  }
+
+  .section-2 h2 {
+    color: white;
+    font-size: 20px;
+    margin-left: 192px;
+    width: 161px;
+    text-align: center;
+    line-height: 30px;
+  }
+}

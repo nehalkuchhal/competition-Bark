@@ -1,0 +1,15 @@
+{
+  "name": "competition",
+  "version": "1.0.0",
+  "description": "product",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel ./*.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "nehalkuchhal",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  }
+}
