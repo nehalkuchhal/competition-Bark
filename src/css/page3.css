@@ -90,7 +90,6 @@ SECTION-3
   animation: imageAnimation1 linear 0.7s 1 alternate;
 }
 
-
 /*
 ===========
 OPERATIONS 
@@ -193,12 +192,16 @@ OPERATIONS
   }
 }
 
-ul {
+.operations__content ul,
+.operations__content_s2 ul,
+.operations__content_s3 ul {
   list-style: none;
   width: 350px;
 }
 
-li {
+.operations__content li,
+.operations__content_s2 li,
+.operations__content_s3 li {
   margin-top: 22px;
 }
 
@@ -219,6 +222,9 @@ RESPONSIVE
 */
 
 @media screen and (max-width: 600px) {
+  body {
+    padding-left: 2px;
+  }
   /* 
 =========
 SECTIONS
@@ -364,16 +370,21 @@ OPERATIONS
     }
   }
 
-  ul {
-    list-style: none;
-    width: 200px;
-  }
-
   .operations__content_s2 ul {
     list-style: none;
   }
 
-  li {
+
+  .operations__content ul,
+  .operations__content_s2 ul,
+  .operations__content_s3 ul {
+    list-style: none;
+    width: 186px;
+  }
+
+  .operations__content li,
+  .operations__content_s2 li,
+  .operations__content_s3 li {
     margin-top: 8px;
   }
 
